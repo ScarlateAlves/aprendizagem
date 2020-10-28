@@ -1,0 +1,91 @@
+.corpo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.747);
+    padding: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabecalho {
+    width: 580px;
+}
+
+h1 {
+    font-size: 28px;
+    color: rgba(255, 255, 255, 0.959);
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+}
+
+h2,
+caption {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    text-align: justify;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.322);
+}
+
+tr.format-tabela {
+    background: rgba(73, 73, 90, 0.356);
+}
+
+tr.format-tabela th {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+th {
+    border: 1px solid rgba(0, 0, 0, 0.342);
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pacineteInvalido {
+    background: yellow;
+}
+
+section {
+    margin-top: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 610px;
+}
+
+input {
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+}
+
+.botao {
+    background: rgba(0, 0, 0, 0.26);
+    border: 1px solid rgba(0, 0, 0, 0.082);
+    font-size: 15px;
+    padding-bottom: 5px;
+    padding-top: 3px;
+}
+
+footer {
+    margin-top: 20px;
+    background: blue;
+}

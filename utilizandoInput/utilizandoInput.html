@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .espaco {
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="espaco">
+        <!-- botao -->
+        <input type="submit" value="SIM" onclick="botao()" id="botao1">
+        <input type="submit" value="NAO" onclick="botao2()" id="botao2">
+        <div id="resultado">
+            resultado
+        </div>
+        <script>
+            // botao sim nao script
+            function botao() {
+                var condicao = document.getElementById('botao1')
+                var resultado = document.querySelector("div#resultado");
+                resultado.innerHTML = ` sim`
+            }
+
+            function botao2() {
+                var condicao = document.getElementById('botao2')
+                var resultado = document.querySelector("div#resultado");
+                resultado.innerHTML = ` nao`
+            }
+        </script>
+    </div>
+
+    <div class="espaco">
+        <!-- botao com radio -->
+        <input type="radio" name="condicao" class="input-radio">
+        <label class="label-format">Sim</label>
+        <input type="radio" name="condicao" class="input-radio">
+        <label class="label-format">Não</label>
+        <br>
+        <button onclick="clicar()">Enviar</button>
+        <div id="segundaParte">
+            resultado
+        </div>
+        <script>
+            // radio script
+            function clicar() {
+                var condicao = document.getElementsByName('condicao');
+                var resultado = document.querySelector("div#segundaParte");
+                if (condicao[0].checked) {
+                    resultado.innerHTML = `sim`
+                } else if (condicao[1].checked) {
+                    resultado.innerHTML = `nao`
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

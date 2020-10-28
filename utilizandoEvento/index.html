@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Utilizando Evento</title>
+</head>
+
+<body>
+    <div class="corpo">
+        <header>
+            <div class="cabecalho">
+                <h1>Tabela de IMC</h1>
+            </div>
+        </header>
+        <main>
+            <div class="tabela">
+                <table>
+                    <!--Cabechalho tabela-->
+                    <thead>
+                        <caption>Pacientes</caption>
+                        <tr class="format-tabela">
+                            <th>Nome</th>
+                            <th>Peso</th>
+                            <th>Altura</th>
+                            <th>Gordura</th>
+                            <th>IMC</th>
+                        </tr>
+                    </thead>
+                    <!--Corpo da tabela-->
+                    <tbody id="tabale-paciente">
+                        <tr class="pacientes">
+                            <th class="informacao-nome">Vanessa</th>
+                            <th class="informacao-peso">5000</th>
+                            <th class="informacao-altura">1.50</th>
+                            <th class="informacao-gordura">20</th>
+                            <th class="informacao-imc"></th>
+                        </tr>
+                        <tr class="pacientes">
+                            <th class="informacao-nome">Carlos</th>
+                            <th class="informacao-peso">90</th>
+                            <th class="informacao-altura">1.80</th>
+                            <th class="informacao-gordura">30</th>
+                            <th class="informacao-imc"></th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        <section>
+            <form id="formulario">
+                <h2>Adicionar paciente</h2>
+                <div class="campo nome">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <div class="campo">
+                    <label for="peso">Peso</label>
+                    <input type="number" name="peso" id="peso">
+                </div>
+                <div class="campo">
+                    <label for="altura">Altura</label>
+                    <input type="number" name="altura" id="altura">
+                </div>
+                <div class="campo">
+                    <label for="gordura">% de Gordura</label>
+                    <input type="number" name="gordura" id="gordura">
+                </div>
+                <input type="submit" class="botao" value="Adicionar" id="adicionar">
+            </form>
+        </section>
+        <footer>
+            <p>Fim</p>
+        </footer>
+    </div>
+    <script src="js/calcula_imc.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
